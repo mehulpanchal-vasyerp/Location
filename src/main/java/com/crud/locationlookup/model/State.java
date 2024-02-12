@@ -32,7 +32,7 @@ public class State {
 	
 	
 //	@OneToMany(mappedBy = "state")
-    @OneToMany(mappedBy = "state", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "state", cascade = CascadeType.ALL)
     private List<City> cities;
 
 }
